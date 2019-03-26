@@ -1,5 +1,5 @@
 
-> Synchronously get the version of a binary in [semver](https://github.com/npm/node-semver) format. Modified from sindersorhus/bin-version
+> Synchronously get the version of a binary in [semver](https://github.com/npm/node-semver) format. Modified from sindresorhus/bin-version
 
 
 ## Install
