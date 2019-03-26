@@ -43,3 +43,4 @@ console.log(binVersion('openssl', {args: ['version']}));
 ## License
 
 MIT © [Sindre Sorhus](https://sindresorhus.com)
+MIT © [Loren Bell](http://lorenbell.com)
