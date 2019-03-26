@@ -3,22 +3,22 @@ import binVersion from '.';
 
 const reVersion = /\d+\.\d+\.\d+/;
 
-test('does-not-exist', async t => {
-	await t.throwsAsync(binVersion('does-not-exist'), /Couldn't find/);
+test('does-not-exist', t => {
+	t.throws(() => binVersion('does-not-exist'));
 });
 
-test('curl', async t => {
-	t.regex(await binVersion('curl'), reVersion);
+test('curl', t => {
+	t.regex(binVersion('curl'), reVersion);
 });
 
-test('npm', async t => {
-	t.regex(await binVersion('npm'), reVersion);
+test('npm', t => {
+	t.regex(binVersion('npm'), reVersion);
 });
 
-test('openssl', async t => {
-	t.regex(await binVersion('openssl', {args: ['version']}), reVersion);
+test('openssl', t => {
+	t.regex(binVersion('openssl', {args: ['version']}), reVersion);
 });
 
-test('php', async t => {
-	t.is(await binVersion('./fixture/php.js'), '7.0.0');
+test('php', t => {
+	t.is(binVersion('./fixture/php.js'), '7.0.0');
 });

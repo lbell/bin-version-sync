@@ -1,13 +1,11 @@
 {
-	"name": "bin-version",
+	"name": "bin-version-sync",
 	"version": "3.0.0",
-	"description": "Get the version of a binary in semver format",
+	"description": "Synchronously get the version of a binary in semver format",
 	"license": "MIT",
-	"repository": "sindresorhus/bin-version",
+	"repository": "lbell/bin-version-sync",
 	"author": {
-		"name": "Sindre Sorhus",
-		"email": "sindresorhus@gmail.com",
-		"url": "sindresorhus.com"
+		"name": "LBell"
 	},
 	"engines": {
 		"node": ">=6"

@@ -1,12 +1,11 @@
-# bin-version [![Build Status](https://travis-ci.com/sindresorhus/bin-version.svg?branch=master)](https://travis-ci.com/sindresorhus/bin-version)
 
-> Get the version of a binary in [semver](https://github.com/npm/node-semver) format
+> Synchronously get the version of a binary in [semver](https://github.com/npm/node-semver) format. Modified from sindersorhus/bin-version
 
 
 ## Install
 
 ```
-$ npm install bin-version
+$ npm install bin-version-sync
 ```
 
 
@@ -18,7 +17,7 @@ curl 7.30.0 (x86_64-apple-darwin13.0)
 ```
 
 ```js
-const binVersion = require('bin-version');
+const binVersion = require('bin-version-sync');
 
 (async () => {
 	console.log(await binVersion('curl'));
@@ -40,8 +39,8 @@ OpenSSL 1.0.2d 9 Jul 2015
 
 
 ## Related
-
-- [bin-version-cli](https://github.com/sindresorhus/bin-version-cli) - CLI for this module
+- [bin-version] (https://github.com/sindresorhus/bin-version) - Original async version
+- [bin-version-cli](https://github.com/sindresorhus/bin-version-cli) - CLI for async module
 - [find-versions](https://github.com/sindresorhus/find-versions) - Find semver versions in a string
 
 
